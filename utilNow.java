@@ -278,5 +278,22 @@ class Main {
 
 
 
+x=321
+
+
+
+if(x>=0):
+    h=int(str(x)[::-1])
+    if(h>((2**31)-1)):
+        print(0)
+    else:
+        print(h)
+else:
+    m=int("-"+str(x)[:0:-1])
+    if(m<(-(2**31)-1)):
+        print(0)
+    else:
+        print(m)
+
 
 
