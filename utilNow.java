@@ -10,7 +10,7 @@ class Main {
         
         arr.add(arr1);
         for(int i=1;i<numRows;i++){
-            List<Integer> demo = new ArrayList<>();
+            List<Integer> demo = new ArrayList<>()
             
             demo.add(1);
             
