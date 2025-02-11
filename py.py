@@ -86,4 +86,27 @@ print(dic)
 # # print(ans)
 
         
-        
+# # Online Python compiler (interpreter) to run Python online.
+# # Write Python 3 code in this online editor and run it.
+# print("Try programiz.pro")
+
+s="ab22"
+
+# print(not h.isdigit())
+ans=[]
+for i in range(len(s)):
+    if(not s[i].isdigit()):
+        print(s[i])
+        ans.append(s[i])
+    
+    if(len(ans)>=1):
+        if(s[i].isdigit()):
+            ans.pop()
+    
+    
+print(ans)
+
+# h=[1,2]
+# h.pop()
+# h.pop()
+# print(h)
