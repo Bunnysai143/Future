@@ -46,3 +46,44 @@ print(ans)
 
 # print("ans",ans)
 
+s = "daabcbaabcbc"
+part = "abc"
+le=len(part)
+temp=""
+
+dic={}
+for i in s:
+    if i in dic:
+        dic[i]+=1
+    else:
+        dic[i]=0
+print(dic)
+for i in range(len(part)-1):
+    if part[i] in dic:
+        if(dic[part[i]]==dic[part[i+1]]):
+            dic.pop(part[i])
+            dic.pop(part[i+1])
+        elif(dic[part[i]]%2!=0):
+            dic.pop(part[i])
+            
+        
+print(dic)
+# for i in range(len(s)):
+#     if(s[i:i+le]!=part):
+#         temp+=s[i:i+le]
+    
+    
+# print(set(temp))
+# print(s)
+
+
+# # 
+# for i in s:
+# #     if i in part:
+# #         ans+=i
+# #     else:
+# #         print(i)
+# # print(ans)
+
+        
+        
