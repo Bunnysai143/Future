@@ -119,6 +119,16 @@ n=nums.copy()
 
 n.sort()
 print(n)
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+n=4
+k=4
+arr=[i for i in range(1,n+1) if n%i==0]
+
+if(len(arr)>=k):
+    print(arr[k-1])
+else:
+    print(-1)
 
 
 
