@@ -106,7 +106,44 @@ for i in range(len(s)):
     
 print(ans)
 
+
+
 # h=[1,2]
 # h.pop()
 # h.pop()
 # print(h)
+nums = [2,11,10,1,3]
+k = 10
+
+n=nums.copy()
+
+n.sort()
+print(n)
+
+
+
+
+
+
+if len(nums)>2:
+     for i in range(len(nums)-1):
+         if(not min(nums)>=k):
+             
+             h=min(n[i], n[i+1]) * 2 + max(n[i],n[i+1])
+             print(n[i+1])
+             print("before",nums)
+            #  nums.remove(n[i+1])
+            #  n.remove(n[i+1])
+             index=nums.index(n[i+1])
+             
+             nums[index]=h
+             
+             nums.remove(nums[nums.index(n[i])])
+                
+             print("after",nums)
+             n[i]=h
+             n.remove(n[i+1])
+             print("demo",n)
+             
+print(nums)
+    
