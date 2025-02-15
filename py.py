@@ -156,4 +156,18 @@ if len(nums)>2:
              print("demo",n)
              
 print(nums)
+nums = [1,3,2,1,5,4]
+k = 2
+h=0
+for i in range(len(nums)):
+    f=i - k
+    l=i+k
+    if(f>=0 and nums[i]>nums[f]):
+            h+=nums[i]
+    elif(l<len(nums) and nums[i]>nums[l]):
+            h+=nums[i]
+            
+
     
+print(h)
+        
