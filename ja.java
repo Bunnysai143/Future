@@ -72,4 +72,4 @@ class Main{
         System.out.println(ans);
         
     }
-}
+}fun
