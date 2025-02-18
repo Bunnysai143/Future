@@ -229,9 +229,32 @@ class Main {
                 System.out.println(temp+"        while");
             }
             ans=Math.min(ans,i-l+1);
-            
-            
         }
         System.out.println(ans);
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        int target = 4;
+        int[] nums = {1,4,4};
+        int len=nums.length;
+        int l=0;
+        int temp=0;
+        int ans=Integer.MAX_VALUE;
+        int count=0;
+        for(int r=0;r<len;r++){
+            temp+=nums[r];
+            while(temp>=target){
+                if(temp==target){
+                    count+=1;
+                }
+                temp-=nums[l];
+                
+                l++;
+            }
+        }
+    System.out.println(count);
     }
 }
