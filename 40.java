@@ -80,3 +80,37 @@ class Solution {
        return ans;
     }
 }
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static int checgoal(int[] nums,int goal){
+        int len=nums.length;
+        int ans=0;
+        int l=0;
+        int temp=0;
+        for(int r=0;r<len;r++){
+                temp+=nums[r];
+            while(temp>goal){
+                temp-=nums[l];
+                l++;
+            }
+         ans+=r-l+1;
+        }
+        return ans;
+    }
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        int[] nums={0,0,0,0,0};
+        int goal=0;
+        int ans=0;
+        if(goal!=0){
+            ans=checgoal(nums,goal)-checgoal(nums,goal-1);
+        }else{
+            ans=checgoal(nums,goal);
+        }
+        System.out.println(ans);
+        
+    }
+}
