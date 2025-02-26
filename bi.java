@@ -106,7 +106,7 @@ class Main {
         int target=0;
         li.add(LeftMost(nums,target));
         li.add(RightMost(nums,target));
-        System.out.println(li);
+        System.out.println(li)
         
     }
 }
