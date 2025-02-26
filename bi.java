@@ -101,7 +101,6 @@ class Main {
     }
     public static void main(String[] args) {
         System.out.println("Try programiz.pro");
-        List<Integer> li=new ArrayList<>();
         int[] nums={};
         int target=0;
         li.add(LeftMost(nums,target));
