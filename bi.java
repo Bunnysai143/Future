@@ -100,7 +100,6 @@ class Main {
         return r;
     }
     public static void main(String[] args) {
-        System.out.println("Try programiz.pro");
         int[] nums={};
         int target=0;
         li.add(LeftMost(nums,target));
