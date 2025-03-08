@@ -30,6 +30,8 @@ class Main {
         
         if (check) {
             r = mid - 1;
+
+
         } else {
             l = mid + 1;
         }
@@ -37,3 +39,5 @@ class Main {
     System.out.println(l);
     }
 }
+
+
