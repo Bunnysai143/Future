@@ -171,9 +171,7 @@ class ChaiShop{
         System.out.println("Total Bill: "+this.total);
         System.out.println("Thanks For Visiting,Come Again,Have a Nice Day");
     }
-    
-    
-    
+        
     
 }
 
